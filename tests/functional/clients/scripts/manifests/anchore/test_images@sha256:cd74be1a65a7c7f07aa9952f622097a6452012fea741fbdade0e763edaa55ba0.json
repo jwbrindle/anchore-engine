@@ -1,0 +1,92 @@
+[
+    {
+        "Id": "sha256:ad08ca1ad2141a02ef86c7e4c3a77687082d1b3faf653e203581cff57dff4399",
+        "RepoTags": [
+            "anchore/test_images:debian-stretch-slim"
+        ],
+        "RepoDigests": [
+            "anchore/test_images@sha256:cd74be1a65a7c7f07aa9952f622097a6452012fea741fbdade0e763edaa55ba0"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2020-10-30T15:47:50.78327941Z",
+        "Container": "aa8265883540d8eebf0e7512e680fe1d3184f23a277d2eef04d2fb4dfb60af53",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "|1",
+                "DEBIAN_FRONTEND=noninteractive",
+                "/bin/sh",
+                "-c",
+                "set -ex &&     apt-get update &&     apt-get --assume-yes -q install --no-install-recommends cron-apt=0.10.0 && rm -rf /var/lib/apt/lists/*"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:c70c67338167dd178929c7b4d6391b764516daacc371ae98130afe2eeeabab2d",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": [],
+            "Labels": null
+        },
+        "DockerVersion": "17.09.0-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "bash"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:c70c67338167dd178929c7b4d6391b764516daacc371ae98130afe2eeeabab2d",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": [],
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 55502212,
+        "VirtualSize": 55502212,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/e030904cf62ef2affa6ae8aaac885ae06515f4e28574084da50cde0823f9b861/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d54e4832c3069fd3f41e4edbda3851274c8d64271f666ed7eb267e0f355868f7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d54e4832c3069fd3f41e4edbda3851274c8d64271f666ed7eb267e0f355868f7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d54e4832c3069fd3f41e4edbda3851274c8d64271f666ed7eb267e0f355868f7/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:b0300c32a4891c4fd60c3c61ddb999441e881adbafb14e9f010b1f4b5f32df87",
+                "sha256:598ae4b03c95571290900e6fa75b203509c50e9046c7e5b59b79be943dd185a8"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
