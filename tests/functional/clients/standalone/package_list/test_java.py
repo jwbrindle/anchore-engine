@@ -1,6 +1,6 @@
 # from ['image']['imagedata']['analysis_report']['package_list']
 from .fixtures import java
-from . import path_params, metadata_params, assert_nested_dict_equal
+from . import path_params, metadata_params
 import pytest
 import json
 
@@ -21,7 +21,7 @@ class TestGemPaths:
 
 class TestGemMetadata:
 
-    @pytest.mark.parametrize('path,metadata,field', metadata_params(java.pkgs, 
+    @pytest.mark.parametrize('path,metadata,field', metadata_params(java.pkgs,
         fields=("specification-version", "implementation-version", "maven-version", "origin", "location", "type", "name", "metadata"))
     )
     def test_has_field(self, analyzed_data, path, metadata, field):
